@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>*</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTestSuite</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Bus__c</members>
+        <name>CustomObject</name>
+    </types>
+     <types>
+        <members>Maintenance_record__c</members>
+        <name>CustomObject</name>
+    </types>
+     <types>
+        <members>Sensor__c</members>
+        <name>CustomObject</name>
+    </types> 
+    <types>
+        <members>Garage__c</members>
+        <name>CustomObject</name>
+    </types>
+    
+     <types>
+        <members>Schedule_flow_for_nightly_job</members>
+        <name>Flow</name>
+    </types>
+    <types>
+		<members>Fleet_Managment_System</members>
+		<name>CustomApplication</name>
+	</types>
+    
+    <version>51.0</version>
+</Package>
