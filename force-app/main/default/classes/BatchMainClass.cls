@@ -1,4 +1,4 @@
-public class BatchMainClass {
+public with sharing class BatchMainClass {
 
     @invocableMethod
     public static void callBatchClass(){

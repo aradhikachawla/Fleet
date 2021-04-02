@@ -1,9 +1,9 @@
 @isTest
-public class CalculateResaleValueTest {
+public with sharing class CalculateResaleValueTest {
 	
     
     @isTest
-    static void Test1(){
+    static void test1(){
          List<Bus__c> allBuses = new  List<Bus__c>();
          for (integer i=1;i<=10;i++){     
        		 Bus__c newbus =  new  Bus__c();
@@ -23,13 +23,13 @@ public class CalculateResaleValueTest {
      List<Bus__c> testBuses = [select id, Resale_Value__c from Bus__c where Current_Status__c = 'Ready For Use' and Resale_Value__c = 0 and  Maximum_Capacity__c='24' ];
      
         System.debug('testBuses size:='+ testBuses.size()); 
-        system.assertEquals(0, testBuses.size());
+        system.assertEquals(0, testBuses.size(),'some issue');
         
         
     }
     
      @isTest
-    static void Test2(){
+    static void test2(){
          List<Bus__c> allBuses = new  List<Bus__c>();
          for (integer i=1;i<=10;i++){     
        		 Bus__c newbus =  new  Bus__c();
@@ -49,12 +49,12 @@ public class CalculateResaleValueTest {
      List<Bus__c> testBuses = [select id, Resale_Value__c from Bus__c where Current_Status__c = 'Ready For Use' and Resale_Value__c = 0 and  Maximum_Capacity__c='36' ];
      
         System.debug('testBuses size:='+ testBuses.size()); 
-        system.assertEquals(0, testBuses.size());
+        system.assertEquals(0, testBuses.size(), 'some issue');
         
         
     }
       @isTest
-    static void Test3(){
+    static void test3(){
          List<Bus__c> allBuses = new  List<Bus__c>();
          for (integer i=1;i<=10;i++){     
        		 Bus__c newbus =  new  Bus__c();
@@ -74,13 +74,13 @@ public class CalculateResaleValueTest {
      List<Bus__c> testBuses = [select id, Resale_Value__c from Bus__c where Current_Status__c = 'Ready For Use' and Resale_Value__c = 0 and  Maximum_Capacity__c='36' ];
      
         System.debug('testBuses size:='+ testBuses.size()); 
-        system.assertEquals(0, testBuses.size());
+        system.assertEquals(0, testBuses.size(), 'some issue');
         
         
     }
    
      @isTest
-    static void Test4(){
+    static void test4(){
          List<Bus__c> allBuses = new  List<Bus__c>();
          for (integer i=1;i<=10;i++){     
        		 Bus__c newbus =  new  Bus__c();
@@ -100,7 +100,7 @@ public class CalculateResaleValueTest {
         List<Bus__c> testBuses = [select id, Resale_Value__c from Bus__c where Current_Status__c = 'Ready For Use' and Resale_Value__c = 0 and  Maximum_Capacity__c='36' ];
      
         System.debug('testBuses size:='+ testBuses.size()); 
-        system.assertEquals(0, testBuses.size());
+        system.assertEquals(0, testBuses.size(), 'some issue');
         
         
     }

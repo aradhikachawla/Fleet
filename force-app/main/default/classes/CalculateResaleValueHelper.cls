@@ -10,17 +10,10 @@ Resale Value is determined by:
 34%
 */
 
-public class CalculateResaleValueHelper {
+public with sharing class CalculateResaleValueHelper {
 
     public static void calculateResale(List<Bus__c> listBuses){
-        System.debug('CalculateResaleValueHelperTrigger');
-       
-        
-      //  List<Bus__c> listBus= [select Id, Name,CreatedDate, Bus_ID__c,Year__c,Number_of_wheels__c, Odometer_Reading__c, Air_conditioner__c, Maximum_Capacity__c, Current_Status__c, Resale_Value__c FROM Bus__c where Maximum_Capacity__c in ('24', '36') and 
-     //                          Current_Status__c = 'Ready for Use' and id in :Ids]; 
-     
-        
-        
+        System.debug('CalculateResaleValueHelperTrigger');          
         System.debug('after CalculateResa: '+ listBuses );
         
         for (Bus__c busResale : listBuses){

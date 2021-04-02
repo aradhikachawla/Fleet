@@ -6,7 +6,7 @@ public with sharing class BatchClassForMaintanance  implements Database.Batchabl
     }
 
     
-    public Database.QueryLocator start(Database.BatchableContext BC) 
+    public Database.QueryLocator start(Database.BatchableContext bc) 
     { 	
    		    System.debug('start');
             List<Bus__c> listBus =   [SELECT Id,   Name, Bus_ID__c, Odometer_Reading__c, Maximum_Capacity__c, Current_Status__c, Odometer_Records__c, (select Location__Latitude__s,Location__Longitude__s from sensors__r) FROM Bus__c where  Maximum_Capacity__c = '60' and Odometer_Records__c >=5000 and Current_Status__c ='Ready for Use' and  Schedule_for_service__c = true  with SECURITY_ENFORCED ];
