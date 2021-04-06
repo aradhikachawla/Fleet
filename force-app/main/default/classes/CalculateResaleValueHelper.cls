@@ -21,13 +21,12 @@ public with sharing class CalculateResaleValueHelper {
         for (Bus__c busResale : listBuses){
             
         decimal sellPrice;
-        decimal resale;
+        decimal resale=0;
             
             System.debug('sellPrice:='+ sellPrice);
             
             if(busResale.Maximum_Capacity__c == '24' && busResale.Current_Status__c == 'Ready For Use'){
                		sellPrice = 120000;
-                    resale = 0;
                 	if (busResale.Odometer_Reading__c!=null &&busResale.Odometer_Reading__c>100000 ){
             			resale = sellPrice - (busResale.Odometer_Reading__c - 100000)*0.10  ; 
                 	}

@@ -3,8 +3,8 @@
     <actionCalls>
         <name>Call_batch_class_to_create_maintenance_record</name>
         <label>Call batch class to create maintenance  record</label>
-        <locationX>684</locationX>
-        <locationY>128</locationY>
+        <locationX>674</locationX>
+        <locationY>121</locationY>
         <actionName>BatchMainClass</actionName>
         <actionType>apex</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -33,7 +33,7 @@
     <processType>AutoLaunchedFlow</processType>
     <start>
         <locationX>50</locationX>
-        <locationY>50</locationY>
+        <locationY>49</locationY>
         <connector>
             <targetReference>Call_batch_class_to_create_maintenance_record</targetReference>
         </connector>
@@ -45,32 +45,11 @@
                 <booleanValue>true</booleanValue>
             </value>
         </filters>
-        <filters>
-            <field>Current_Status__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>Ready For Use</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Maximum_Capacity__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>60</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Odometer_Records__c</field>
-            <operator>GreaterThanOrEqualTo</operator>
-            <value>
-                <numberValue>5000.0</numberValue>
-            </value>
-        </filters>
         <object>Bus__c</object>
         <schedule>
             <frequency>Daily</frequency>
-            <startDate>2021-04-01</startDate>
-            <startTime>16:00:00.000Z</startTime>
+            <startDate>2021-04-06</startDate>
+            <startTime>00:15:00.000Z</startTime>
         </schedule>
         <triggerType>Scheduled</triggerType>
     </start>
