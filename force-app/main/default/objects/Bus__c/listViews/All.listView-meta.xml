@@ -6,9 +6,10 @@
     <columns>Current_Status__c</columns>
     <columns>Odometer_Records__c</columns>
     <columns>LAST_UPDATE</columns>
+    <columns>Bus_Image__c</columns>
     <columns>Resale_Value__c</columns>
+    <columns>Bus_Picture__c</columns>
     <columns>Maximum_Capacity__c</columns>
-    <columns>Number_of_wheels__c</columns>
     <columns>Odometer_Reading__c</columns>
     <columns>Year__c</columns>
     <columns>Schedule_for_service__c</columns>
