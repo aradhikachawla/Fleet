@@ -44,11 +44,7 @@
        <members>Fleet_Managment_System</members>
        <name>CustomApplication</name>
    </types>
-   <types>
-       <members>PleasureBoats</members>
-       <name>StaticResource</name>
-   </types>
-           
+  
     <types>
        <members>*</members>
        <name>LightningMessageChannel</name>
